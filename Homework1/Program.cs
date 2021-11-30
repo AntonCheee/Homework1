@@ -6,27 +6,18 @@ namespace Homework1
     {
         static void Main(string[] args)
         {
-              Task1();
+            //Task1();
             //Task2();
             //Task3();
             //Task4();
-            //Task5();
+            Task5();
         }
 
         public static void Task1()
         {
-            double a, b;
-            do
-            {
-                Console.WriteLine("Set two UNEQUAL numbers");
-                a = double.Parse(Console.ReadLine());
-                b = double.Parse(Console.ReadLine());
-                if (a == b)
-                {
-                    Console.WriteLine("The equation does not contain solutions for equal entered numbers");
-                }
-            }
-            while (a == b);
+            Console.WriteLine("Set two UNEQUAL numbers");
+            double a = double.Parse(Console.ReadLine());
+            double b = double.Parse(Console.ReadLine());
 
             double result = (5 * a + b * b) / (b - a);
 
@@ -56,19 +47,10 @@ namespace Homework1
 
         public static void Task4()
         {
-            float a, b, c;
-            do
-            {
-                Console.WriteLine("Set three NON-ZERO numbers");
-                a = float.Parse(Console.ReadLine());
-                b = float.Parse(Console.ReadLine());
-                c = float.Parse(Console.ReadLine());
-                if (a == 0 || b == 0 || c == 0)
-                {
-                    Console.WriteLine("You entered a number equal to zero, please try again");
-                }
-            }
-            while (a == 0 || b == 0 || c == 0);
+            Console.WriteLine("Set three NON-ZERO numbers");
+            float a = float.Parse(Console.ReadLine());
+            float b = float.Parse(Console.ReadLine());
+            float c = float.Parse(Console.ReadLine());
 
             float x = (c - b) / a;
 
@@ -87,24 +69,9 @@ namespace Homework1
             Console.WriteLine("Set y2:");
             float y2 = float.Parse(Console.ReadLine());
 
-            if (x1 == x2 && y1 != y2)
-            {
-                Console.WriteLine($"X= {x1}");
-            }
-            else if (x1 != x2 && y1 == y2)
-            {
-                Console.WriteLine($"Y= {y1}");
-            }
-            else if (x1 != x2 && y1 != y2)
-            {                
-                float a = (y1 - y2) / (x1 - x2);
-                float b = y2 - a * x2;
-                Console.WriteLine($"Y= {a}*X + {b}");
-            }
-            else
-            {
-                Console.WriteLine("It is not possible to make an equation of a line because you entered points with the same coordinates.");
-            }
+            float a = (y1 - y2) / (x1 - x2);
+            float b = y2 - a * x2;
+            Console.WriteLine($"Y= {a}*X + {b}");
         }
     }
 }
