@@ -56,7 +56,6 @@ namespace Homework1
 
         public static void Task4()
         {
-
             float a, b, c;
             do
             {
@@ -82,7 +81,7 @@ namespace Homework1
             float x1 = float.Parse(Console.ReadLine());
             float y1 = float.Parse(Console.ReadLine());
             float x2 = float.Parse(Console.ReadLine());
-            float y2 = float.Parse(Console.ReadLine());           
+            float y2 = float.Parse(Console.ReadLine());
 
             if (x1 == x2 && y1 != y2)
             {
@@ -101,7 +100,7 @@ namespace Homework1
             else
             {
                 Console.WriteLine("It is not possible to make an equation of a line because you entered points with the same coordinates.");
-            }           
+            }
         }
     }
 }
