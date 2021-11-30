@@ -6,7 +6,7 @@ namespace Homework1
     {
         static void Main(string[] args)
         {
-            Task1();
+              Task1();
             //Task2();
             //Task3();
             //Task4();
@@ -78,9 +78,13 @@ namespace Homework1
 
         public static void Task5()
         {
+            Console.WriteLine("Set x1:");
             float x1 = float.Parse(Console.ReadLine());
+            Console.WriteLine("Set y1:");
             float y1 = float.Parse(Console.ReadLine());
+            Console.WriteLine("Set x2:");
             float x2 = float.Parse(Console.ReadLine());
+            Console.WriteLine("Set y2:");
             float y2 = float.Parse(Console.ReadLine());
 
             if (x1 == x2 && y1 != y2)
